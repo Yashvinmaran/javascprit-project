@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.cta-buttons {
+  margin-top: 1rem;
+}
+
+.cta-buttons .button {
+  text-decoration: none;
+  color: white;
+  background: #4CAF50;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+.cta-buttons .button.secondary {
+  background: #2196F3;
+}

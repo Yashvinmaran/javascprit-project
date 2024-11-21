@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients - Doctor Appointment App</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Manage Patients</h1>
+            <nav>
+                <a href="dashboard.html" class="btn">Dashboard</a>
+                <a href="doctors.html" class="btn">Doctors</a>
+                <a href="appointments.html" class="btn">Appointments</a>
+                <a href="index.html" class="btn btn-logout">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="patients-management">
+        <div class="container">
+            <h2>Patients List</h2>
+            <button id="addPatientBtn" class="btn">Add Patient</button>
+
+            <table id="patientsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="patientsList">
+                    <!-- Patients will be listed here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Add/Edit Patient Modal -->
+    <div id="patientModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Add Patient</h2>
+            <form id="patientForm">
+                <div class="form-group">
+                    <label for="patientName">Name</label>
+                    <input type="text" id="patientName" name="patientName" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="patientEmail">Email</label>
+                    <input type="email" id="patientEmail" name="patientEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <button type="submit" class="btn">Save</button>
+                <button type="button" class="btn btn-cancel" id="cancelBtn">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Doctor Appointment App. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+    <script src="patients.js"></script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+/* Global Styles */
+body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+  }
+  
+  .container {
+      width: 80%;
+      margin: auto;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      color: #fff;
+      transition: left 0.3s;
+      padding: 20px;
+  }
+  
+  .sidebar-header h2 {
+      color: #fff;
+  }
+  
+  .sidebar nav ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  .sidebar nav ul li {
+      padding: 15px 0;
+  }
+  
+  .sidebar nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+  }
+  
+  .sidebar nav ul li a:hover {
+      background-color: #444;
+  }
+  
+  .sidebar .btn-toggle {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 30px;
+      cursor: pointer;
+  }
+  
+  /* Main Content */
+  .main-content {
+      margin-left: 0;
+      padding: 20px;
+      transition: margin-left 0.3s;
+  }
+  
+  header .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  header h1 {
+      font-size: 2rem;
+  }
+  
+  .stats {
+      margin-top: 2rem;
+  }
+  
+  .chart-container {
+      width: 100%;
+      height: 400px;
+  }
+  
+  .recent-appointments {
+      margin-top: 3rem;
+  }
+  
+  table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+  
+  th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+  }
+  
+  th {
+      background-color: #42a5f5;
+      color: white;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+      .container {
+          width: 95%;
+      }
+  
+      .sidebar {
+          left: -250px;
+      }
+  
+      .main-content {
+          margin-left: 0;
+      }
+  
+      .sidebar.show {
+          left: 0;
+      }
+  
+      .btn-toggle {
+          display: block;
+      }
+  }
+  
+.dashboard-overview {
+      padding: 2rem 0;
+  }
+  
+  .dashboard-overview h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+  
+  .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+  }
+  
+  .stat-box {
+      background: #fff;
+      padding: 1rem;
+      width: 200px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-box h3 {
+      font-size: 1.2rem;
+      color: #333;
+  }
+  
+  .stat-box p {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #42a5f5;
+  }
+  
+  .charts {
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .chart {
+      width: 48%;
+      height: 300px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .doctors-management {
+      padding: 2rem 0;
+  }
+  
+  #doctorsTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+  }
+  
+  #doctorsTable th, #doctorsTable td {
+      padding: 1rem;
+      text-align: left;
+      border: 1px solid #ddd;
+  }
+  
+  #doctorsTable th {
+      background-color: #42a5f5;
+      color: white;
+  }
+  
+  #doctorsTable td button {
+      margin: 0 5px;
+  }
+  
+  .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .modal-content {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px;
+  }
+  
+  #doctorForm {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #doctorForm .form-group {
+      margin-bottom: 1rem;
+  }
+  
+  #doctorForm button {
+      margin-top: 1rem;
+  }
+  
+  #cancelBtn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }
+  
+  #cancelBtn:hover {
+      background-color: #e53935;
+  }
+  .patients-management {
+      padding: 2rem 0;
+  }
+  
+  #patientsTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+  }
+  
+  #patientsTable th, #patientsTable td {
+      padding: 1rem;
+      text-align: left;
+      border: 1px solid #ddd;
+  }
+  
+  #patientsTable th {
+      background-color: #42a5f5;
+      color: white;
+  }
+  
+  #patientsTable td button {
+      margin: 0 5px;
+  }
+  
+  .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .modal-content {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px;
+  }
+  
+  #patientForm {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #patientForm .form-group {
+      margin-bottom: 1rem;
+  }
+  
+  #patientForm button {
+      margin-top: 1rem;
+  }
+  
+  #cancelBtn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }
+  
+  #cancelBtn:hover {
+      background-color: #e53935;
+  }
+  .appointments-management {
+      padding: 2rem 0;
+  }
+  
+  #appointmentsTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+  }
+  
+  #appointmentsTable th, #appointmentsTable td {
+      padding: 1rem;
+      text-align: left;
+      border: 1px solid #ddd;
+  }
+  
+  #appointmentsTable th {
+      background-color: #42a5f5;
+      color: white;
+  }
+  
+  #appointmentsTable td button {
+      margin: 0 5px;
+  }
+  
+  .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .modal-content {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px;
+  }
+  
+  #appointmentForm {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #appointmentForm .form-group {
+      margin-bottom: 1rem;
+  }
+  
+  #appointmentForm button {
+      margin-top: 1rem;
+  }
+  
+  #cancelAppointmentBtn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }
+  
+  #cancelAppointmentBtn:hover {
+      background-color: #e53935;
+  }
+      

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Doctor Appointment App</title>
+    <link rel="stylesheet" href="dashboard2.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>Admin Panel</h2>
+            <button id="toggleSidebar" class="btn-toggle">☰</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="patients.html">Patients</a></li>
+                <li><a href="index.html" class="btn-logout">Logout</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="header">
+            <div class="header-container">
+                <button id="hamburgerMenu" class="hamburger-menu">☰</button>
+                <h1>Admin Dashboard</h1>
+            </div>
+        </header>
+
+        <section class="stats">
+            <div class="container">
+                <div class="chart-container">
+                    <canvas id="appointmentsChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-appointments">
+            <div class="container">
+                <h2>Recent Appointments</h2>
+                <table id="appointmentsTable">
+                    <thead>
+                        <tr>
+                            <th>Patient</th>
+                            <th>Doctor</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Appointments will be listed here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Doctor Appointment App. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

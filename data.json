@@ -1,0 +1,132 @@
+{
+  "users": [
+    {
+      "id": "e2ed",
+      "name": "Yashvin",
+      "email": "yashvinmaran6@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "6a70",
+      "patientId": "622e",
+      "doctorId": "c22f",
+      "appointmentDate": "2024-12-12",
+      "appointmentTime": "10:15",
+      "status": "Completed"
+    },
+    {
+      "id": "81ef",
+      "patientId": "640b",
+      "doctorId": "e757",
+      "appointmentDate": "2024-12-10",
+      "appointmentTime": "14:40",
+      "status": "Scheduled"
+    },
+    {
+      "id": "c239",
+      "patientId": "6f5a",
+      "doctorId": "5d7c",
+      "appointmentDate": "2024-12-05",
+      "appointmentTime": "11:20",
+      "status": "Cancelled"
+    },
+    {
+      "id": "a895",
+      "patientId": "532f",
+      "doctorId": "462b",
+      "appointmentDate": "2024-12-20",
+      "appointmentTime": "15:45",
+      "status": "Completed"
+    },
+    {
+      "id": "102c",
+      "patientId": "3a59",
+      "doctorId": "05f5",
+      "appointmentDate": "2024-12-04",
+      "appointmentTime": "14:10",
+      "status": "Completed"
+    }
+  ],
+  "doctors": [
+    {
+      "doctorName": "Dr. Yashvin Maran",
+      "specialization": "Psychological Expert",
+      "doctorEmail": "yashvinmaran@gmail.com",
+      "id": "c22f"
+    },
+    {
+      "id": "e757",
+      "doctorName": "Dr. Dilkash Alam",
+      "specialization": "dentish",
+      "doctorEmail": "dilkash@gmail.com"
+    },
+    {
+      "id": "462b",
+      "doctorName": "Dr. Vansh Chouksey",
+      "specialization": "Heart sergen",
+      "doctorEmail": "vanshchouksey@gmail.com"
+    },
+    {
+      "id": "5d7c",
+      "doctorName": "Dr. Deepanshu Maran",
+      "specialization": "sergen",
+      "doctorEmail": "deepanshumaran@gmail.com"
+    },
+    {
+      "doctorName": "Dr. Ashafak",
+      "specialization": "Darmotologist",
+      "doctorEmail": "ashafak@gmail.com",
+      "id": "e53c"
+    },
+    {
+      "id": "05f5",
+      "doctorName": "Dr. joy doe",
+      "specialization": "Heart sergen",
+      "doctorEmail": "joy@gmail.com"
+    }
+  ],
+  "patients": [
+    {
+      "id": "640b",
+      "patientName": "Suraj Singh",
+      "age": 45,
+      "gender": "Male",
+      "patientEmail": "surajsingh@gmail.com",
+      "phone": "1234567890"
+    },
+    {
+      "patientName": "Rajesh maran",
+      "age": 50,
+      "gender": "Male",
+      "patientEmail": "rajeshkhare@gmail.com",
+      "phone": "1111111111",
+      "id": "532f"
+    },
+    {
+      "id": "622e",
+      "patientName": "vansh chouksey",
+      "age": 20,
+      "gender": "Male",
+      "patientEmail": "vanshchouksey@gmail.com",
+      "phone": "0987654321"
+    },
+    {
+      "id": "6f5a",
+      "patientName": "Rajat singh",
+      "age": 48,
+      "gender": "Male",
+      "patientEmail": "rajat@gmail.com",
+      "phone": "1234554321"
+    },
+    {
+      "id": "3a59",
+      "patientName": "new patient",
+      "age": 60,
+      "gender": "Male",
+      "patientEmail": "new@gmail.com",
+      "phone": "1234567890"
+    }
+  ]
+}

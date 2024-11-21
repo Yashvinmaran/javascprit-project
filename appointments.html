@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments - Doctor Appointment App</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Manage Appointments</h1>
+            <nav>
+                <a href="dashboard.html" class="btn">Dashboard</a>
+                <a href="doctors.html" class="btn">Doctors</a>
+                <a href="patients.html" class="btn">Patients</a>
+                <a href="index.html" class="btn btn-logout">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="appointments-management">
+        <div class="container">
+            <h2>Appointments List</h2>
+            <button id="addAppointmentBtn" class="btn">Add Appointment</button>
+
+            <table id="appointmentsTable">
+                <thead>
+                    <tr>
+                        <th>Patient</th>
+                        <th>Doctor</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="appointmentsList">
+                    <!-- Appointments will be listed here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Add/Edit Appointment Modal -->
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Add Appointment</h2>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="patientId">Patient</label>
+                    <select id="patientId" name="patientId" required></select>
+                </div>
+                <div class="form-group">
+                    <label for="doctorId">Doctor</label>
+                    <select id="doctorId" name="doctorId" required></select>
+                </div>
+                <div class="form-group">
+                    <label for="appointmentDate">Date</label>
+                    <input type="date" id="appointmentDate" name="appointmentDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointmentTime">Time</label>
+                    <input type="time" id="appointmentTime" name="appointmentTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status" name="status" required>
+                        <option value="Scheduled">Scheduled</option>
+                        <option value="Completed">Completed</option>
+                        <option value="Cancelled">Cancelled</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Save</button>
+                <button type="button" class="btn btn-cancel" id="cancelAppointmentBtn">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Doctor Appointment App. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+    <script src="appointments.js"></script>
+</body>
+</html>

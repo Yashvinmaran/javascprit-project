@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors - Doctor Appointment App</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Manage Doctors</h1>
+            <nav>
+                <a href="dashboard.html" class="btn">Dashboard</a>
+                <a href="patients.html" class="btn">Patients</a>
+                <a href="appointments.html" class="btn">Appointments</a>
+                <a href="index.html" class="btn btn-logout">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="doctors-management">
+        <div class="container">
+            <h2>Doctors List</h2>
+            <button id="addDoctorBtn" class="btn">Add Doctor</button>
+
+            <table id="doctorsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Specialization</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="doctorsList">
+                    <!-- Doctors will be listed here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Add/Edit Doctor Modal -->
+    <div id="doctorModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Add Doctor</h2>
+            <form id="doctorForm">
+                <div class="form-group">
+                    <label for="doctorName">Name</label>
+                    <input type="text" id="doctorName" name="doctorName" required>
+                </div>
+                <div class="form-group">
+                    <label for="specialization">Specialization</label>
+                    <input type="text" id="specialization" name="specialization" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctorEmail">Email</label>
+                    <input type="email" id="doctorEmail" name="doctorEmail" required>
+                </div>
+                <button type="submit" class="btn">Save</button>
+                <button type="button" class="btn btn-cancel" id="cancelBtn">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Doctor Appointment App. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+    <script src="doctors.js"></script>
+</body>
+</html>
